@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+sales = [100, 150, 120, 180, 200]
+plt.plot(months, sales,
+ color='red', 
+ linestyle='--', 
+ marker='o', 
+ markerfacecolor='blue',
+ linewidth=2) 
+plt.title("Monthly Sales Report (2025)", 
+fontsize=14, color='blue')
+plt.xlabel("Month", fontsize=12)
+plt.ylabel("Sales in Units", fontsize=12)
+plt.grid(True, linestyle=':', color='gray')
+plt.legend(["Sales Data"], loc='lower right')
+plt.show()
